@@ -47,8 +47,8 @@ Install an IDE for editing Python code, for example Visual Studio Code (VS Code)
 
 1. Open the folder `labs/keywords/python` in the IDE.
 2. Configure the project to use the virtual environment that you created above.
-    * *In VS Code, you can click the Python environment indicator in the bottom right corner of the window (the button show the version of Python), select `Enter interpreter path...` and then `Find...`. Then, in the "Select Python interpreter" window select the Python executable `.venv\Scripts\python.exe` (Windows) or `.venv/bin/python3` (Mac/Linux) under the `.venv` folder of the virtual environment that you created in step 2. If you do not see the indicator, ensure that the Python extension is installed and enabled. You may need to open a Python file to activate the indicator.*
-3. Open a terminal in the IDE.
+    * *In VS Code, you can click the Python environment indicator in the bottom right corner of the window (the button shows the version of Python), select `Enter interpreter path...` and then `Find...`. Then, in the "Select Python interpreter" window select the Python executable `.venv\Scripts\python.exe` (Windows) or `.venv/bin/python3` (Mac/Linux) under the `.venv` folder of the virtual environment that you created in step 2. If you do not see the indicator, ensure that the Python extension is installed and enabled. You may need to open a Python file to activate the indicator.*
+3. Open a terminal in the IDE. Do not use an already opened terminal.
 4. Verify that the correct virtual environment is activated by checking that this command outputs the correct path to its `.venv` folder:
     ```sh
     python -c "import sys; print(sys.prefix)"
