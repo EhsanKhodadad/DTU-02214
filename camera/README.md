@@ -44,9 +44,11 @@ This lab includes a very simple application for capturing images with the ESP32-
     ```
 2. Stop the monitor (`Ctrl/Command+[` or similar) to release the serial port. NOTE: Do not send 'S' in the terminal - the application will start dumping image data into your terminal, and you might have trouble stopping the monitor. The Python application will send the 'S' to start the capture.
 3. Open the `python` folder in your Python IDE, select your virtual environment for it, and install dependencies from `requirements.txt`.
-4. Run the Python application (The port should be `/dev/ttyACM0` or similar):
+4. Run the Python application:
     ```
     python main.py --port <port> --output-path <output-path>
     ```
+    * For Windows, <port> should be `COM3` or similar.
+    * For Mac and Linux, <port> should be `/dev/ttyACM0` or similar.
     You should see a small window with the camera feed.
 5. Start capturing images according to your data collection plan.
